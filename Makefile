@@ -2,6 +2,7 @@ include .env
 export
 
 VENV := .venv
+SYSTEM_PYTHON := $(shell command -v python3.11 || command -v python3.12 || command -v python3)
 PYTHON := $(VENV)/bin/python
 PIP := $(VENV)/bin/pip
 UVICORN := $(VENV)/bin/uvicorn
@@ -75,7 +76,7 @@ setup-firewall:
 
 # ── Python venv ──
 venv:
-	@test -d $(VENV) || python3.11 -m venv $(VENV)
+	@test -d $(VENV) || $(SYSTEM_PYTHON) -m venv $(VENV)
 	@echo "✓ venv ready"
 
 # ── Backend ──
