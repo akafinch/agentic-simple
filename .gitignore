@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.egg
+.venv/
+venv/
+*.egg-info
+
+# Node
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/*
+!frontend/build/.gitkeep
+
+# Generated output
+backend/output/*
+!backend/output/.gitkeep
+!backend/output/charts/
+backend/output/charts/*
+!backend/output/charts/.gitkeep
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

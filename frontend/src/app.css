@@ -1,0 +1,64 @@
+:root {
+	/* Akamai-inspired palette */
+	--navy: #0D1B2A;
+	--navy-light: #1B2D45;
+	--blue: #009BDE;
+	--teal: #00D4AA;
+	--purple: #6366F1;
+	--amber: #EAB308;
+	--red: #EF4444;
+	--light: #F0F4F8;
+	--gray-100: #E2E8F0;
+	--gray-200: #CBD5E1;
+	--gray-300: #94A3B8;
+	--gray-400: #64748B;
+	--gray-500: #475569;
+	--text: #E2E8F0;
+	--text-muted: #94A3B8;
+	--surface: #1E293B;
+	--surface-raised: #263348;
+	--border: #334155;
+
+	/* Typography */
+	--font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: var(--font-sans);
+	background: var(--navy);
+	color: var(--text);
+	line-height: 1.6;
+}
+
+a {
+	color: var(--blue);
+}
+
+code, pre {
+	font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--gray-500);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--gray-400);
+}
