@@ -85,9 +85,8 @@ Pick 2-3 based on your audience:
 
 | Question | Answer |
 |----------|--------|
-| "What models are you using?" | Gemma 3 by Google — 27B for the manager, 12B for specialists. Open-weight, runs great on consumer/prosumer GPUs via Ollama. |
+| "What models are you using?" | Gemma 3 by Google — 27B for the manager, and Qwen 2.5 12B for specialists. Open-weight, runs great on consumer/prosumer GPUs via Ollama for testing, vLLM for production, and so forth. |
 | "How long does a typical run take?" | 3-5 minutes depending on topic complexity. The mock mode demo runs in ~30 seconds. |
-| "Could this run at the edge?" | Absolutely — that's the vision. Smaller models on edge GPUs, orchestrated by a larger model in a regional hub. |
 | "What about web search / RAG?" | This demo uses model knowledge only. Adding web search or RAG tools is straightforward with CrewAI's tool system. |
 | "What framework is this?" | CrewAI — a Python framework for multi-agent orchestration. Hierarchical process mode lets a manager agent delegate to specialists. |
 
